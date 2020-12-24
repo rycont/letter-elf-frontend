@@ -32,7 +32,7 @@ const sendLetter = async () => {
         if(emailInput.value && emailValidate.test(emailInput.value)){
             await database.doc(letterDoc.id).set({
                 sender: emailInput.value
-            })
+            }, { merge: true })
             return setNoticeText('이메일이 등록되었습니다 :)')
         }
         
