@@ -1,4 +1,9 @@
 import { database } from '../database.js'
 (async () => {
-    document.getElementById('article_content').appendChild(document.createTextNode((await database.doc(location.hash.slice(1)).get()).data().content))
+    const letter = database.doc(location.hash.slice(1))
+    document.getElementById('article_content').appendChild(document.createTextNode((await letter.get()).data().content))
+    letter.set({
+        target: 'SENDED',
+        sender: 'SENDED'
+    }, {merge: true})
 })()
