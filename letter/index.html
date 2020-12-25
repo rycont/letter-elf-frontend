@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../commonstyle.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../button.css">
 </head>
 <body>
-    SHORT URL TEST
+    <h1>요정의 편지</h1>
+    <h2>누군가 보낸 편지가 도착했어요</h2>
+    <article>
+        Firebase 호스팅은 최신 웹 개발자를 위해 개발되었습니다. Angular 등의 프런트엔드 자바스크립트 프레임워크 및 Jekyll 등의 정적 생성기 도구가 부상하면서 웹사이트 및 앱의 기능이 점점 강력해지고 있습니다. 간단한 앱 방문 페이지를 배포하든 복잡한 프로그레시브 웹 앱(PWA)을 배포하든 Firebase 호스팅은 웹사이트 및 앱을 배포하고 관리하는 데 특화된 인프라, 기능, 도구를 제공합니다.
+
+Firebase CLI를 사용하여 컴퓨터의 로컬 디렉터리에 있는 파일을 호스팅 서버에 배포합니다. 정적 콘텐츠를 제공하는 것 외에도 Firebase용 Cloud Functions 또는 Cloud Run을 사용하여 사이트에 동적 콘텐츠 및 호스트 마이크로서비스를 제공할 수 있습니다. 모든 콘텐츠는 글로벌 CDN 중 사용자와 가장 가까운 에지 서버에서 SSL 연결을 통해 제공됩니다.
+
+라이브로 전환하기 전 변경사항을 확인하고 테스트할 수도 있습니다. Firebase 로컬 에뮬레이터 도구 모음을 사용하면 앱 및 백엔드 리소스를 로컬에서 호스팅된 URL에서 에뮬레이션할 수 있습니다. 또한 임시 미리보기 URL에서 변경사항을 공유하고 개발 중 쉽게 반복할 수 있도록 GitHub 통합을 설정할 수도 있습니다.
+
+Firebase 호스팅은 정교한 PWA를 빌드할 수 있는 간단한 호스팅 구성 옵션을 제공합니다. 클라이언트 측 라우팅용 URL을 간단하게 재작성하고 커스텀 헤더를 설정하며 현지화된 콘텐츠를 제공할 수도 있습니다.
+
+Firebase에는 콘텐츠를 제공할 수 있는 여러 도메인과 하위 도메인 옵션이 있습니다.
+
+기본적으로 모든 Firebase 프로젝트에는 web.app 및 firebaseapp.com 도메인에 무료 하위 도메인이 있습니다. 이 두 사이트는 동일한 배포 콘텐츠와 구성을 제공합니다.
+
+서로 다른 콘텐츠를 제공하지만 같은 Firebase 프로젝트 리소스를 공유하는 관련 사이트와 앱이 있으면(예를 들어 블로그, 관리 패널, 공개 앱이 있는 경우) 여러 사이트를 만들 수 있습니다.
+
+Firebase 호스팅 사이트에 자체 도메인 이름을 연결할 수 있습니다.
+
+Firebase는 모든 도메인에 대한 SSL 인증서를 자동으로 프로비저닝하므로 모든 콘텐츠가 안전하게 제공됩니다.
+    </article>
+    <div class="button" id="gotomain">
+        나도 보내기
+        <img src="../next.svg">
+    </div>
 </body>
 </html>

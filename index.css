@@ -42,23 +42,6 @@ textarea:focus {
     border-radius: 24px;
 }
 
-.button {
-    font-size: 18px;
-    display: inline-block;
-    font-weight: 900;
-    margin-top: 36px;
-    transition: 1s cubic-bezier(0,.65,.25,1);
-}
-
-.button img {
-    margin-top: -1px;
-    margin-left: 3px;
-}
-
-.button:hover {
-    transform: translateY(-5px);
-}
-
 .success_modal {
     padding: 24px;
     text-align: center;
